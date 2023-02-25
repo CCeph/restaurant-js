@@ -1,4 +1,59 @@
-/*Testing*/
-h1 {
-  color: red;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
+
+/*Grid styling for the whole page layout*/
+.main-grid {
+  display: grid;
+  height: 100vh;
+  grid-template: 1.5fr 9fr 50px / 1fr;
+}
+
+/*Start of Header styling*/
+
+.header {
+  background-color: black;
+  color: white;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  justify-content: space-around;
+  grid-gap: 30%;
+}
+
+.header h1 {
+  text-align: center;
+  align-self: center;
+
+  font-size: 2.2rem;
+}
+
+.header .nav {
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+
+  font-size: 1.5rem;
+  font-family: Roboto;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+/*End of Header styling*/
+
+/*Start of Footer styling*/
+
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*End of Footer styling*/
