@@ -46,6 +46,20 @@ body {
 
 /*End of Header styling*/
 
+/*Start of main styling*/
+
+.banner {
+  display: flex;
+  justify-content: center;
+}
+
+.banner > img {
+  margin: 10px;
+  width: 60%;
+}
+
+/*End of main styling*/
+
 /*Start of Footer styling*/
 
 .footer {
