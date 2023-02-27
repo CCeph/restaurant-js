@@ -58,6 +58,16 @@ body {
   width: 60%;
 }
 
+.main .intro {
+  display: flex;
+  text-align: justify;
+}
+
+.intro > p {
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+
 /*End of main styling*/
 
 /*Start of Footer styling*/
