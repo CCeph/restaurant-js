@@ -44,6 +44,12 @@ body {
   border: 1px solid black;
 }
 
+.nav button {
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
 /*End of Header styling*/
 
 /*Start of main styling*/
