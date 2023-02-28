@@ -1,7 +1,7 @@
 import steak from "./resources/steak-feast.jpg";
 
 // Bind DOM
-const content = document.querySelector("#content");
+export const content = document.querySelector("#content");
 
 function createTitle() {
   const title = document.createElement("h1");
@@ -42,7 +42,7 @@ function createNav() {
   return nav;
 }
 
-function createHeader() {
+export function createHeader() {
   const header = document.createElement("div");
   header.classList.add("header");
 
@@ -95,7 +95,7 @@ function createBodyMain() {
   return bodyMain;
 }
 
-function createFooter() {
+export function createFooter() {
   const footer = document.createElement("footer");
   footer.classList.add("footer");
 
