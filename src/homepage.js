@@ -13,18 +13,21 @@ function createTitle() {
 function createHomeButton() {
   const homeBtn = document.createElement("button");
   homeBtn.textContent = "Home";
+  homeBtn.classList.add("home");
   return homeBtn;
 }
 
 function createAboutButton() {
   const aboutBtn = document.createElement("button");
   aboutBtn.textContent = "About";
+  aboutBtn.classList.add("about");
   return aboutBtn;
 }
 
 function createContactButton() {
   const contactBtn = document.createElement("button");
   contactBtn.textContent = "Contact Us";
+  contactBtn.classList.add("contact");
   return contactBtn;
 }
 
