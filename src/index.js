@@ -49,4 +49,5 @@ function createContactPage() {
   bindEvents();
 }
 
-createHomePage();
+// Currently only used for debugging. Change to createHomePage() later.
+createAboutPage();

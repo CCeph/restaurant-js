@@ -2,6 +2,11 @@ import { createHeader, createFooter, content } from "./homepage";
 
 function createBodyMain() {
   const body = document.createElement("div");
+  body.classList.add("main");
+
+  const hoursTitle = document.createElement("h2");
+  hoursTitle.textContent = "Hours";
+  body.appendChild(hoursTitle);
 
   return body;
 }
