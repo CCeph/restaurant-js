@@ -1,10 +1,12 @@
 import { createHeader, createFooter, content } from "./homepage";
 
 function createHoursText() {
-  const hoursText = document.createElement("p");
+  const hoursText = document.createElement("div");
+  hoursText.classList.add("hours");
 
   // Used to simplify code as many linebreaks are needed.
   const linebreak = document.createElement("br");
+
   const lineOne = document.createElement("p");
   lineOne.textContent = "Monday - Friday: 11 AM to 8 PM";
   hoursText.appendChild(lineOne);
@@ -21,6 +23,13 @@ function createHoursText() {
   return hoursText;
 }
 
+function createContactText() {
+  const contactText = document.createElement("div");
+  contactText.classList.add("contact");
+
+  return contactText;
+}
+
 function createBodyMain() {
   const body = document.createElement("div");
   body.classList.add("main");
@@ -31,6 +40,13 @@ function createBodyMain() {
 
   const hoursText = createHoursText();
   body.appendChild(hoursText);
+
+  const contactUsTitle = document.createElement("h2");
+  contactUsTitle.textContent = "Contact Us";
+  body.appendChild(contactUsTitle);
+
+  const contactUsText = createContactText();
+  body.appendChild(contactUsText);
 
   return body;
 }

@@ -85,6 +85,13 @@ body {
   font-family: "Heebo", system-ui, "Segoe UI", Roboto, Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   letter-spacing: 0.08rem;
+  font-size: 1.6rem;
+}
+
+.hours p {
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 1.15rem;
 }
 
 /*End of main styling*/
