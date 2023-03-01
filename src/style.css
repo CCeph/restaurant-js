@@ -54,6 +54,11 @@ body {
   background-color: transparent;
   color: white;
   border: none;
+  font-size: 0.9rem;
+}
+
+.nav button:hover {
+  color: rgb(177, 177, 177);
 }
 
 /*End of Header styling*/
