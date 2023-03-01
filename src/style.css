@@ -94,6 +94,28 @@ body {
   font-size: 1.15rem;
 }
 
+/*Start of form styling*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+}
+
+form :is(label, input, textarea) {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+form :is(input, textarea) {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+/*End of form styling*/
+
 /*End of main styling*/
 
 /*Start of Footer styling*/

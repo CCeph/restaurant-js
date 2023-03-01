@@ -23,9 +23,69 @@ function createHoursText() {
   return hoursText;
 }
 
+function createContactForm() {
+  const contactForm = document.createElement("form");
+  contactForm.setAttribute("action", " ");
+
+  // name
+  const nameLabel = document.createElement("label");
+  contactForm.appendChild(nameLabel);
+  nameLabel.textContent = "Name: (Required)";
+  nameLabel.setAttribute("for", "name");
+
+  const nameInput = document.createElement("input");
+  contactForm.appendChild(nameInput);
+  nameInput.setAttribute("type", "text");
+  nameInput.setAttribute("required", "");
+  nameInput.setAttribute("id", "name");
+
+  // email
+  const emailLabel = document.createElement("label");
+  contactForm.appendChild(emailLabel);
+  emailLabel.textContent = "Email: (Required)";
+  emailLabel.setAttribute("for", "email");
+
+  const emailInput = document.createElement("input");
+  contactForm.appendChild(emailInput);
+  emailInput.setAttribute("type", "text");
+  emailInput.setAttribute("required", "");
+  emailInput.setAttribute("id", "email");
+
+  // subject
+  const subjectLabel = document.createElement("label");
+  contactForm.appendChild(subjectLabel);
+  subjectLabel.textContent = "Subject: (Required)";
+  subjectLabel.setAttribute("for", "subject");
+
+  const subjectInput = document.createElement("input");
+  contactForm.appendChild(subjectInput);
+  subjectInput.setAttribute("type", "text");
+  subjectInput.setAttribute("required", "");
+  subjectInput.setAttribute("id", "subject");
+
+  // message
+  const messageLabel = document.createElement("label");
+  contactForm.appendChild(messageLabel);
+  messageLabel.textContent = "Message: (Required)";
+  messageLabel.setAttribute("for", "message");
+
+  const messageInput = document.createElement("textarea");
+  contactForm.appendChild(messageInput);
+  messageInput.setAttribute("name", "message");
+  messageInput.setAttribute("id", "message");
+  messageInput.setAttribute("cols", "30");
+  messageInput.setAttribute("rows", "10");
+  messageInput.setAttribute("required", "");
+
+  return contactForm;
+}
+
 function createContactText() {
   const contactText = document.createElement("div");
   contactText.classList.add("contact");
+
+  const contactForm = createContactForm();
+  contactText.appendChild(contactForm);
 
   return contactText;
 }
