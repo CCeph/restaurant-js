@@ -50,4 +50,4 @@ function createContactPage() {
 }
 
 // Currently only used for debugging. Change to createHomePage() later.
-createAboutPage();
+createContactPage();
