@@ -71,11 +71,15 @@ function createContactForm() {
 
   const messageInput = document.createElement("textarea");
   contactForm.appendChild(messageInput);
-  messageInput.setAttribute("name", "message");
   messageInput.setAttribute("id", "message");
   messageInput.setAttribute("cols", "30");
   messageInput.setAttribute("rows", "10");
   messageInput.setAttribute("required", "");
+
+  // submit
+  const submit = document.createElement("button");
+  contactForm.appendChild(submit);
+  submit.textContent = "Submit";
 
   return contactForm;
 }
