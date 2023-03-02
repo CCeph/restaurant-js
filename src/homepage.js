@@ -1,4 +1,4 @@
-import steak from "./resources/steak-feast.jpg";
+import steak from "./resources/steak-header.jpg";
 
 // Bind DOM
 export const content = document.querySelector("#content");
