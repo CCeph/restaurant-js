@@ -2,6 +2,7 @@ import { createHeader, createFooter, content } from "./homepage";
 
 function createBodyMain() {
   const body = document.createElement("div");
+  body.classList.add("main");
 
   return body;
 }
