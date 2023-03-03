@@ -17,11 +17,11 @@ function createHomeButton() {
   return homeBtn;
 }
 
-function createAboutButton() {
-  const aboutBtn = document.createElement("button");
-  aboutBtn.textContent = "About";
-  aboutBtn.classList.add("about");
-  return aboutBtn;
+function createMenuButton() {
+  const menuBtn = document.createElement("button");
+  menuBtn.textContent = "Menu";
+  menuBtn.classList.add("menu");
+  return menuBtn;
 }
 
 function createContactButton() {
@@ -36,7 +36,7 @@ function createNav() {
   nav.classList.add("nav");
 
   nav.appendChild(createHomeButton());
-  nav.appendChild(createAboutButton());
+  nav.appendChild(createMenuButton());
   nav.appendChild(createContactButton());
 
   return nav;

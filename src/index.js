@@ -1,6 +1,6 @@
 import "./style.css";
 import fillHomePage from "./homepage";
-import fillAboutPage from "./about";
+import fillMenuPage from "./menu";
 import fillContactPage from "./contact";
 
 // Bind DOM
@@ -16,9 +16,9 @@ function bindEvents() {
   // eslint-disable-next-line no-use-before-define
   homeBtn.addEventListener("click", createHomePage);
 
-  const aboutBtn = document.querySelector(".nav .about");
+  const menuBtn = document.querySelector(".nav .menu");
   // eslint-disable-next-line no-use-before-define
-  aboutBtn.addEventListener("click", createAboutPage);
+  menuBtn.addEventListener("click", createMenuPage);
 
   const contactBtn = document.querySelector(".nav .contact");
   // eslint-disable-next-line no-use-before-define
@@ -33,11 +33,11 @@ function createHomePage() {
   bindEvents();
 }
 
-// Erases the current page and replaces it with the About page.
+// Erases the current page and replaces it with the Menu page.
 
-function createAboutPage() {
+function createMenuPage() {
   deletePage();
-  fillAboutPage();
+  fillMenuPage();
   bindEvents();
 }
 
