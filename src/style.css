@@ -99,6 +99,25 @@ body {
   font-size: 1.15rem;
 }
 
+.menu-grid {
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  justify-items: center;
+}
+
+.menu-grid img {
+  width: 300px;
+}
+
+.menu-grid .image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-grid > .food-container {
+  margin: 20px;
+}
+
 /*Start of form styling*/
 
 form {
