@@ -1,4 +1,4 @@
-import steak from "./resources/steak-header.jpg";
+import bannerImage from "./resources/restaurant.jpg";
 
 // Bind DOM
 export const content = document.querySelector("#content");
@@ -56,9 +56,9 @@ function createBanner() {
   const banner = document.createElement("div");
   banner.classList.add("banner");
 
-  const steakImg = new Image();
-  steakImg.src = steak;
-  banner.appendChild(steakImg);
+  const bannerImg = new Image();
+  bannerImg.src = bannerImage;
+  banner.appendChild(bannerImg);
 
   return banner;
 }
