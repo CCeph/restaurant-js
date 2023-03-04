@@ -1,9 +1,12 @@
 import { createHeader, createFooter, content } from "./homepage";
 import steakFeast from "./resources/steak-feast.jpg";
-import salmonImg from "./resources/salmon-dish.jpg";
-import burgerImg from "./resources/burger2.jpg";
+import salmonImg from "./resources/salmon.jpg";
+import sliderImg from "./resources/burger2.jpg";
+import burgerImg from "./resources/burger3.jpg";
+import wingsImg from "./resources/wings.jpg";
+import shrimpImg from "./resources/shrimp.jpg";
 
-function createDish(name, imageSrc) {
+function createDish(name, imageSrc, description) {
   const foodContainer = document.createElement("div");
   foodContainer.classList.add("food-container");
 
@@ -20,9 +23,13 @@ function createDish(name, imageSrc) {
   foodContainer.appendChild(foodTitle);
 
   const foodText = document.createElement("p");
-  foodText.textContent = `Lorem ipsum dolor sit amet, 
-  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-  ut labore et dolore magna aliqua.`;
+  if (description === undefined) {
+    foodText.textContent = `Lorem ipsum dolor sit amet, 
+    consectetur adipiscing elit, sed do eiusmod tempor incididunt
+    ut labore et dolore magna aliqua.`;
+  } else {
+    foodText.textContent = description;
+  }
   foodContainer.appendChild(foodText);
 
   return foodContainer;
@@ -35,8 +42,20 @@ function createBodyMain() {
   const firstItem = createDish("Steak Feast", steakFeast);
   body.appendChild(firstItem);
 
-  const secondItem = createDish("Burger", burgerImg);
+  const secondItem = createDish("Slider", sliderImg);
   body.appendChild(secondItem);
+
+  const thirdItem = createDish("Burger", burgerImg);
+  body.appendChild(thirdItem);
+
+  const fourthItem = createDish("Salmon", salmonImg);
+  body.appendChild(fourthItem);
+
+  const fifthItem = createDish("Wings", wingsImg);
+  body.appendChild(fifthItem);
+
+  const sixthItem = createDish("Shrimp", shrimpImg);
+  body.appendChild(sixthItem);
 
   return body;
 }
